@@ -8,6 +8,7 @@
     <div class="panel-body">
         @if (Convert.ToBoolean(Session["loginFailed"]) == true)
         {
+            Session["loginFailed"] = false;
             <div class="alert alert-danger" role="alert">
                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                 <span class="sr-only">Hata:</span>
