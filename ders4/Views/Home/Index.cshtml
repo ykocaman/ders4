@@ -6,7 +6,7 @@
 <div class="panel panel-default">
     <div class="panel-heading">Giriş Yapın</div>
     <div class="panel-body">
-        @if (ViewBag.LoginFailed == true)
+        @if (Convert.ToBoolean(Session["loginFailed"]) == true)
         {
             <div class="alert alert-danger" role="alert">
                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>

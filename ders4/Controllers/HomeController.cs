@@ -42,7 +42,7 @@ namespace ders4.Controllers
                 return Redirect("/Panel/Index");
             }
 
-            ViewBag.LoginFailed = true;
+            Session["loginFailed"] = true;
 
             return Redirect("/Home/Index");
         }
